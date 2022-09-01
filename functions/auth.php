@@ -1,7 +1,7 @@
 <?php
 
-function is_authenticaded() {
-    if (empty($_SESSION['is_authenticaded'])) {
+function is_authenticated() {
+    if (empty($_SESSION['is_authenticated'])) {
         return false;
     } else {
         return true;

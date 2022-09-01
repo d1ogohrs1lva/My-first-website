@@ -25,13 +25,13 @@
                     </li>
                 </ul>
                 <ul>
-                    <?php if (is_authenticaded()) : ?>
+                    <?php if (is_authenticated()) : ?>
                         <li>
                             <a href="?route=dashboard">Dashboard</a>
                         </li>
                     <?php endif; ?>
                         <li>
-                    <?php if (is_authenticaded()) : ?>
+                    <?php if (is_authenticated()) : ?>
                             <a class="user-login-button" href="?route=logout">Logout</a> 
                     <?php else : ?>
                             <a class="user-login-button" href="?route=login">Login</a>

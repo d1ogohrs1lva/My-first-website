@@ -9,7 +9,7 @@ $login = $_POST['username'];
 $password = $_POST['password'];
 
 if ($login == USER_LOGIN && $password == USER_PASSWORD) {
-    $_SESSION['is_authenticaded'] = true;
+    $_SESSION['is_authenticated'] = true;
     set_flash_message("Utilizador autenticado com sucesso!");
     url_redirect(['route' => 'dashboard']);
 } else {
