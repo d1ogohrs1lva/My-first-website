@@ -10,16 +10,16 @@ function get_flash_message() {
     if (empty($_SESSION['flash_message'])) {
         return null;
     }
-}
 
-$flashMessage = $_SESSION['flash_message'];
-$timestampNow = strtotime('now');
-$timestampFlashMessage = $_SESSION['flash_message_timestamp'];
+    $flashMessage = $_SESSION['flash_message'];
+    $timestampNow = strtotime('now');
+    $timestampFlashMessage = $_SESSION['flash_message_timestamp'];
 
-if ($timestampNow > $timestampFlashMessage) {
+    if ($timestampNow > $timestampFlashMessage) {
     unset($_SESSION['flash_message']);
     unset($_SESSION['flash_message_timestamp']);
     return null;
-} else {
+    } else {
     return $flashMessage;
+    }
 }
