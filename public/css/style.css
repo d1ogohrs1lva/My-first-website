@@ -24,8 +24,16 @@ body, html {
     justify-content: space-between;
 }
 
+.flex-justify-content-center {
+    justify-content: center;
+}
+
 .flex-col {
     flex-direction: column;
+}
+
+.flex-align-items-center {
+    align-items: center;
 }
 
 .page {
